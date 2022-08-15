@@ -1,0 +1,207 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.announcement {
+    background-image: url("img/50x50-blue-white.jpg");
+    background-repeat: repeat;
+    height: 50px;
+    max-width: 100vh;
+}
+
+main {
+    background-color: rgb(255, 255, 255);
+    padding: 4px;
+    color: #303030;
+    grid-area: main;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+}
+
+.products img {
+    width: 160px;
+}
+
+.card {
+    border: #f5baea solid 2px;
+    padding: 0 10px;
+    margin: 5px;
+    text-align: center;
+}
+
+aside {
+    grid-area: aside;
+}
+
+aside h2 {
+    background-color: #ffffff;
+    padding: 4px 4px 4px 20px;
+}
+
+h1, h2 {
+    color: darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#pic {
+    border: 1px solid #808080;
+    padding: 2px;
+    margin: 8px;
+    border-radius: 5px;
+    max-width: 320px;
+}
+
+.experience {
+    border: inset 1px;
+    margin-bottom: 4px;
+    padding: 4px;
+    background-color: white;
+    color: #222;
+}
+
+.experience .title {
+    font-weight: bold;
+}
+
+#menu li {
+    display: inline;
+    padding:4px 12px;
+    background-color: rgb(43, 43, 43);
+    color: white;
+}
+
+#menu li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+#menu li.active {
+    background-color: darkblue;
+    text-decoration: none;
+}
+
+#menu {
+    float: right;
+}
+
+header {
+    display: grid;
+    justify-content: start;
+    align-items: center;
+    grid-area: header;
+}
+
+header #menu {
+    margin-left: auto;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+       "header header"
+       "main aside"
+       "footer footer ";
+    grid-template-columns: auto 10rem;
+    grid-gap: 8px;
+}
+
+label, input {
+    display: block;
+}
+
+#formInfo {
+    font-size: 14px;
+    font-style: unset;
+}
+
+.tg {
+    border-collapse:collapse;border-spacing:0;
+}
+
+.tg td {
+    border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;
+}
+
+.tg th {
+    border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;
+}
+
+.tg .tg-baqh {
+    text-align:center;vertical-align:top
+}
+
+.tg .tg-i0gb {
+    background-color:#f5baea;font-weight:bold;text-align:center;vertical-align:top
+}
+
+@media screen and (max-width: 767px) {
+    .tg {
+        width: auto !important;
+    }
+    .tg col {
+        width: auto !important;
+    }
+    .tg-wrap {
+        overflow-x: auto;-webkit-overflow-scrolling: touch;
+    }
+}
+
+footer {
+    text-align: center;
+    background-color: #ffffff;
+    color: darkblue;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 2px;
+    /* position: fixed; */
+    bottom: 0;
+    left: 0px;
+    width: 100%;
+    grid-area: footer;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: center
+}
+
+.social-media {
+    display: flex;
+    margin: 0auto;
+    margin-top: 10px;
+}
+
+.social-links {
+    padding: 5px 0 0 15px;
+}
+
+.social-links li {
+    display: inline;
+    padding-left: 0px !important;
+}
+
+.social-links li:nth-of-type(6) {
+    padding-right: 60px;
+}
+
+.social-links li img {
+    width: 25px;
+    padding: 0px 5px;
+}
+
+.social-media h3 {
+    padding-top: 0.4em;
+}
+
+.pic-headline {
+    text-align: center;
+}
+
+.pic-Lydia {
+    text-align: center;
+}
