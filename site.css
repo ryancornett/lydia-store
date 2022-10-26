@@ -1,19 +1,58 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+:root {
+    --primary-500: #699ada;
+    --primary-700: #4a74e8;
+    --background: #e6eef3;
+    --secondary-700: #a11a88;
 }
 
-.announcement {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    
+    background-color: var(--background);
+}
+
+header {
+    height: 50px;
+    width: 98vw;
     background-image: url("img/50x50-blue-white.jpg");
     background-repeat: repeat;
-    height: 50px;
-    max-width: 100vh;
+}
+
+.center {
+    margin: 0 auto;
+    text-align: center;
+}
+
+header > .wrapper> h1 {
+    filter: drop-shadow(0 0 5px #fff);
+    color: var(--secondary-700);
+}
+
+nav {
+    margin: 2em 3em;
+    display: flex;
+}
+
+nav > button {
+    margin: 0 0.75em;
+    font-size: 1.25em;
+    background-color: var(--primary-700);
+    color: white;
+    padding: 0.25em;
 }
 
 main {
-    background-color: rgb(255, 255, 255);
+    margin: 4em auto;
     padding: 4px;
     color: #303030;
-    grid-area: main;
+    width: 90%;
 }
 
 .products {
@@ -30,6 +69,12 @@ main {
     padding: 0 10px;
     margin: 5px;
     text-align: center;
+    max-width: 300px;
+}
+
+.rotate90cw {
+    transform: rotate(90deg);
+    margin: 2.5rem 0;
 }
 
 aside {
@@ -85,27 +130,6 @@ h1, h2 {
 
 #menu {
     float: right;
-}
-
-header {
-    display: grid;
-    justify-content: start;
-    align-items: center;
-    grid-area: header;
-}
-
-header #menu {
-    margin-left: auto;
-}
-
-.container {
-    display: grid;
-    grid-template-areas: 
-       "header header"
-       "main aside"
-       "footer footer ";
-    grid-template-columns: auto 10rem;
-    grid-gap: 8px;
 }
 
 label, input {

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -13,21 +13,14 @@
     
 
 <header>
-    <div class="announcement">
-        <p></p>
-    </div>
-
-    <div class="container">
+    <div class="wrapper center">
         <h1 id="siteName">Lydia's Bath & Body Works Store</h1>
     </div>
-
-    <div class="horizon">
-        <div class="navbar">
-            <button>HOME</button>
-            <button>SOAPS</button>
-            <button>SPRAYS</button>
-            <button>SKIN CARE</button>
-        </div>
+    <nav class="navbar">
+        <button>HOME</button>
+        <button>SOAPS</button>
+        <button>SPRAYS</button>
+        <button>SKIN CARE</button>
 
         <div class="search">
 
@@ -36,7 +29,7 @@
         <div class="cart">
 
         </div>
-    </div>
+    </nav>
 </header>
 
 <main>
@@ -44,28 +37,28 @@
     <div class="products">
         <div class="card">
             <h3 class="product-name">Coffee & Whiskey Body Wash - 10 oz.</h3>
-            <img src="img/sample-product.jpg" />
+            <img src="img/sample-product.jpg" alt="A sample product" />
             <p class="price">$14.99</p>
             <p class="description">A smoky combination guaranteed to awaken the senses with a <em>kick</em>!</p>
         </div>
 
         <div class="card">
             <h3 class="product-name">Coffee & Whiskey Body Wash - 16 oz.</h3>
-            <img src="img/sample-product.jpg" />
+            <img src="img/sample-product.jpg" alt="A sample product" />
             <p class="price">$20.99</p>
             <p class="description">A smoky combination guaranteed to awaken the senses with a <em>kick</em>!</p>
         </div>
 
         <div class="card">
             <h3 class="product-name">Purrfect Pumpkin Liquid Soap - 1.25 oz.</h3>
-            <img src="img/sample-product2.jpg" height="230" />
+            <img src="img/sample-product2.jpg" height="230" alt="A sample product" />
             <p class="price">$7.49</p>
             <p class="description">Spiced, creamy pumpkin, spooky cinnamon and moonlight vanilla. <em>Boo</em>tiful!</p>
         </div>        
 
         <div class="card">
             <h3 class="product-name">Purrfect Pumpkin Liquid Soap - 2.25 oz.</h3>
-            <img src="img/sample-product2.jpg" height="230" />
+            <img src="img/sample-product2.jpg" height="230" alt="A sample product" />
             <p class="price">$10.49</p>
             <p class="description">Spiced, creamy pumpkin, spooky cinnamon and moonlight vanilla. <em>Boo</em>tiful!</p>
         </div>
@@ -74,28 +67,88 @@
     <div class="products">
         <div class="card">
             <h3 class="product-name">Gingham Fragrance Combo - 12 oz.</h3>
-            <img src="img/fragrance.jpeg" />
+            <img src="img/fragrance.jpeg" alt="A sample product" />
             <p class="price">$14.99</p>
             <p class="description">Buy one piece, get the other for <strong>FREE</strong>!</p>
         </div>
 
         <div class="card">
             <h3 class="product-name">Suave Strawberry Conditioner - 16 oz.</h3>
-            <img src="img/conditioner.jpeg" height="230" />
+            <img src="img/conditioner.jpeg" height="230" alt="A sample product" />
             <p class="price">$2.49</p>
             <p class="description">An explosion of spring berry aroma sure to awaken the senses.</p>
         </div>
 
         <div class="card">
             <h3 class="product-name">Lycra Arm Sleeves - 2 ea.</h3>
-            <img src="img/arm-sleeves.jpeg" />
+            <img src="img/arm-sleeves.jpeg" alt="A sample product" />
             <p class="price">$8.99</p>
             <p class="description">You work hard for soft skin--protect it from the sun's UV radiation.</p>
         </div>
 
         <div class="card">
             <h3 class="product-name">Gingham Fragrance Combo - 16 oz.</h3>
-            <img src="img/fragrance.jpeg" height="230" />
+            <img src="img/fragrance.jpeg" height="230" alt="A sample product" />
+            <p class="price">$10.49</p>
+            <p class="description">Buy one piece, get the other for <strong>FREE</strong>!</p>
+        </div>
+    </div>
+
+    <div class="products">
+        <div class="card">
+            <h3 class="product-name">Shimmer Mist - 12 oz.</h3>
+            <img src="img/shimmer-mist.jpg" class="rotate90cw" alt="A sample product" />
+            <p class="price">$7.99</p>
+            <p class="description">Straight out of the shower mist that is sure to make you shimmer.</p>
+        </div>
+
+        <div class="card">
+            <h3 class="product-name">Suave Strawberry Conditioner - 16 oz.</h3>
+            <img src="img/conditioner.jpeg" height="230" alt="A sample product" />
+            <p class="price">$2.49</p>
+            <p class="description">An explosion of spring berry aroma sure to awaken the senses.</p>
+        </div>
+
+        <div class="card">
+            <h3 class="product-name">Lycra Arm Sleeves - 2 ea.</h3>
+            <img src="img/arm-sleeves.jpeg" alt="A sample product" />
+            <p class="price">$8.99</p>
+            <p class="description">You work hard for soft skin--protect it from the sun's UV radiation.</p>
+        </div>
+
+        <div class="card">
+            <h3 class="product-name">Gingham Fragrance Combo - 16 oz.</h3>
+            <img src="img/fragrance.jpeg" height="230" alt="A sample product" />
+            <p class="price">$10.49</p>
+            <p class="description">Buy one piece, get the other for <strong>FREE</strong>!</p>
+        </div>
+    </div>
+
+    <div class="products">
+        <div class="card">
+            <h3 class="product-name">Gingham Fragrance Combo - 12 oz.</h3>
+            <img src="img/fragrance.jpeg" alt="A sample product" />
+            <p class="price">$14.99</p>
+            <p class="description">Buy one piece, get the other for <strong>FREE</strong>!</p>
+        </div>
+
+        <div class="card">
+            <h3 class="product-name">Suave Strawberry Conditioner - 16 oz.</h3>
+            <img src="img/conditioner.jpeg" height="230" alt="A sample product" />
+            <p class="price">$2.49</p>
+            <p class="description">An explosion of spring berry aroma sure to awaken the senses.</p>
+        </div>
+
+        <div class="card">
+            <h3 class="product-name">Lycra Arm Sleeves - 2 ea.</h3>
+            <img src="img/arm-sleeves.jpeg" alt="A sample product" />
+            <p class="price">$8.99</p>
+            <p class="description">You work hard for soft skin--protect it from the sun's UV radiation.</p>
+        </div>
+
+        <div class="card">
+            <h3 class="product-name">Gingham Fragrance Combo - 16 oz.</h3>
+            <img src="img/fragrance.jpeg" height="230" alt="A sample product" />
             <p class="price">$10.49</p>
             <p class="description">Buy one piece, get the other for <strong>FREE</strong>!</p>
         </div>
